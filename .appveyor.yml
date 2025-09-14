@@ -1,0 +1,24 @@
+environment:
+  nodejs_version: "20" # окружение
+
+version: 1.0.{build}
+
+image: Ubuntu2004  # образ для сборки
+
+branches:
+  only:
+    - main  # ветка git
+    - master 
+    
+cache: node_modules  # кеширование
+
+install:
+  - npm install  # команда установки зависимостей
+
+build: off  # отключаем встроенную в appveyor систему сборки
+
+build_script:
+  - npm run build   # команда сборки
+
+test_script:
+  - npm run lint && npm test  # скрипт тестирования
