@@ -1,4 +1,4 @@
-## AJS_Regex-Nickname
+## Ajs-regex-phone-number
 [![Build status](https://ci.appveyor.com/api/projects/status/0oec3d554g8j320l?svg=true)](https://ci.appveyor.com/project/LexusIgnatenko/ajs-regex-phone-number)
 
 ---
